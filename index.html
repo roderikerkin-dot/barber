@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <title>BLACK BEARD — барбершоп</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">✂ BLACK BEARD</a>
+
+            <button class="burger" id="burgerBtn" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="navMenu">
+                <a href="#services">Услуги</a>
+                <a href="#barbers">Барберы</a>
+                <a href="#gallery">Галерея</a>
+                <a href="#booking">Запись</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Стрижка ✂ Борода ✂ Бритьё ✂ Фейд ✂ Камуфляж седины ✂&nbsp;</span>
+            <span>Стрижка ✂ Борода ✂ Бритьё ✂ Фейд ✂ Камуфляж седины ✂&nbsp;</span>
+        </div>
+    </div>
+
+    <main>
+
+        <section class="hero">
+            <div class="container">
+                <span class="sticker">Барбершоп · центр города</span>
+                <h1>Стрижка —<br>это <span class="outline">визитка</span><br>мужчины</h1>
+                <p>Классика, фейды, королевское бритьё. Без очередей — по записи.</p>
+                <a href="#booking" class="button">Записаться</a>
+                <a href="#services" class="button button-secondary">Прайс</a>
+            </div>
+        </section>
+
+        <div class="tape" aria-hidden="true"></div>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title">Услуги и цены</h2>
+
+                <div class="cards">
+                    <article class="card service-card" data-service="Классическая стрижка">
+                        <div class="card-num">01</div>
+                        <h3>Классическая стрижка</h3>
+                        <p>Машинка + ножницы, консультация и укладка в подарок.</p>
+                        <span class="price">1 200 ₽</span>
+                    </article>
+
+                    <article class="card service-card" data-service="Королевское бритьё">
+                        <div class="card-num">02</div>
+                        <h3>Королевское бритьё</h3>
+                        <p>Опасная бритва, горячее полотенце, премиум-косметика.</p>
+                        <span class="price">1 000 ₽</span>
+                    </article>
+
+                    <article class="card service-card" data-service="Оформление бороды">
+                        <div class="card-num">03</div>
+                        <h3>Оформление бороды</h3>
+                        <p>Форма, окантовка, масло. Борода будет выглядеть ухоженно.</p>
+                        <span class="price">900 ₽</span>
+                    </article>
+
+                    <article class="card service-card" data-service="Стрижка + борода">
+                        <div class="card-num">04</div>
+                        <h3>Стрижка + борода</h3>
+                        <p>Комплекс. 90 минут — и ты новый человек.</p>
+                        <span class="price">1 900 ₽</span>
+                    </article>
+
+                    <article class="card service-card" data-service="Детская стрижка">
+                        <div class="card-num">05</div>
+                        <h3>Детская стрижка</h3>
+                        <p>Для парней до 12 лет. Терпеливо и аккуратно.</p>
+                        <span class="price">800 ₽</span>
+                    </article>
+
+                    <article class="card service-card" data-service="Камуфляж седины">
+                        <div class="card-num">06</div>
+                        <h3>Камуфляж седины</h3>
+                        <p>Деликатное тонирование волос и бороды. Никто не заметит.</p>
+                        <span class="price">700 ₽</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="barbers" class="section section-skew">
+            <div class="container">
+                <h2 class="section-title">Наши барберы</h2>
+
+                <div class="cards">
+                    <article class="card barber-card">
+                        <img src="images/barber1.jpg" alt="Барбер Максим" class="barber-photo">
+                        <h3>Максим «Топор»</h3>
+                        <p class="barber-role">Основатель · 8 лет</p>
+                        <p>Мастер классики и опасного бритья. Победитель Barber Cup 2023.</p>
+                    </article>
+
+                    <article class="card barber-card">
+                        <img src="images/barber2.jpg" alt="Барбер Денис" class="barber-photo">
+                        <h3>Денис</h3>
+                        <p class="barber-role">Барбер · 5 лет</p>
+                        <p>Специалист по фейдам и современным стрижкам.</p>
+                    </article>
+
+                    <article class="card barber-card">
+                        <img src="images/barber3.jpg" alt="Барбер Артём" class="barber-photo">
+                        <h3>Артём</h3>
+                        <p class="barber-role">Барбер · 4 года</p>
+                        <p>Король бороды: оформление, камуфляж седины и уход.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div class="tape" aria-hidden="true"></div>
+
+        <section id="gallery" class="section">
+            <div class="container">
+                <h2 class="section-title">Наши работы</h2>
+
+                <div class="gallery">
+                    <img src="images/work1.jpg" alt="Мужская стрижка фейд">
+                    <img src="images/work2.jpg" alt="Классическая стрижка">
+                    <img src="images/work3.jpg" alt="Оформление бороды">
+                    <img src="images/work4.jpg" alt="Стрижка машинкой">
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="section section-skew">
+            <div class="container">
+                <h2 class="section-title">Онлайн-запись</h2>
+
+                <div class="booking-box">
+                    <form action="https://formspree.io/f/ТВОЙ_ID" method="POST" id="bookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Услуга</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Выберите услугу</option>
+                                <option value="Классическая стрижка">Классическая стрижка — 1 200 ₽</option>
+                                <option value="Королевское бритьё">Королевское бритьё — 1 000 ₽</option>
+                                <option value="Оформление бороды">Оформление бороды — 900 ₽</option>
+                                <option value="Стрижка + борода">Стрижка + борода — 1 900 ₽</option>
+                                <option value="Детская стрижка">Детская стрижка — 800 ₽</option>
+                                <option value="Камуфляж седины">Камуфляж седины — 700 ₽</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Дата</label>
+                                <div class="date-wrap">
+                                    <input type="date" id="date" name="date" required>
+                                    <div class="schedule-popup" id="schedulePopup" hidden></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="time">Время</label>
+                                <select id="time" name="time" required>
+                                    <option value="" disabled selected>Сначала выберите дату</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="button">Записаться</button>
+                    </form>
+
+                    <div class="form-success" id="formSuccess" hidden>
+                        <div class="success-emoji">✂️</div>
+                        <h3>Вы записаны!</h3>
+                        <p>Мы перезвоним для подтверждения записи.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="section">
+            <div class="container">
+                <h2 class="section-title">Контакты</h2>
+
+                <div class="cards">
+                    <div class="card">
+                        <h3>📍 Адрес</h3>
+                        <p>г. Москва, ул. Тверская, 7</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>🕐 Часы работы</h3>
+                        <p>Ежедневно с 10:00 до 22:00</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>📞 Телефон</h3>
+                        <p><a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 BLACK BEARD. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <button class="to-top" id="toTopBtn" aria-label="Наверх">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>
