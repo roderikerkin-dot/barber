@@ -87,7 +87,7 @@ const dateWrap = dateInput.closest('.date-wrap');
 
 dateInput.min = formatDate(new Date());
 
-// ===== Всплывающее расписание =====
+// ===== Всплывающее расписание с тремя группами дат =====
 
 function groupHtml(cls, title, dates) {
     if (dates.length === 0) return '';
@@ -230,3 +230,43 @@ phoneInput.addEventListener('focus', function () {
 phoneInput.addEventListener('blur', function () {
     if (this.value === '+7 (' || this.value === '+7') this.value = '';
 });
+
+// ===== Скролл-история: стрижка скроллом =====
+
+const story = document.getElementById('story');
+
+if (story) {
+    const afterImg = document.getElementById('sceneAfter');
+    const cutLine = document.getElementById('cutLine');
+    const stepEl = document.getElementById('storyStep');
+    const titleEl = document.getElementById('storyTitle');
+    const descEl = document.getElementById('storyDesc');
+    const barEl = document.getElementById('storyBar');
+
+    const stages = [
+        { t: 'Ты пришёл', d: 'Заросший, уставший, но с надеждой. Знакомо?' },
+        { t: 'Машинка', d: 'Убираем бока. Уже видно, что будет человек.' },
+        { t: 'Ножницы', d: 'Форма сверху. Почти произведение искусства.' },
+        { t: 'Борода', d: 'Окантовка и масло. Королевский вид.' },
+        { t: 'Готово', d: 'Выходи из кресла новым человеком. +100 к харизме.' }
+    ];
+
+    function updateStory() {
+        const rect = story.getBoundingClientRect();
+        const total = rect.height - window.innerHeight;
+        let progress = -rect.top / total;
+        progress = Math.max(0, Math.min(1, progress));
+
+        afterImg.style.clipPath = 'inset(0 ' + (100 - progress * 100) + '% 0 0)';
+        cutLine.style.left = (progress * 100) + '%';
+
+        const stage = Math.min(4, Math.floor(progress * 5));
+        stepEl.textContent = '0' + (stage + 1);
+        titleEl.textContent = stages[stage].t;
+        descEl.textContent = stages[stage].d;
+        barEl.style.width = (progress * 100) + '%';
+    }
+
+    window.addEventListener('scroll', updateStory);
+    updateStory();
+}

@@ -100,6 +100,27 @@
             </div>
         </section>
 
+        <section class="story" id="story">
+            <div class="story-sticky">
+                <div class="container story-inner">
+                    <div class="story-text">
+                        <span class="story-label">Трансформация</span>
+                        <span class="story-step" id="storyStep">01</span>
+                        <h2 class="story-title" id="storyTitle">Ты пришёл</h2>
+                        <p class="story-desc" id="storyDesc">Заросший, уставший, но с надеждой. Знакомо?</p>
+                    </div>
+
+                    <div class="story-scene" id="storyScene">
+                        <div class="scene-before"></div>
+                        <div class="scene-after" id="sceneAfter"></div>
+                        <div class="cut-line" id="cutLine"><span class="cut-scissors">✂️</span></div>
+                    </div>
+                </div>
+
+                <div class="story-progress"><span id="storyBar"></span></div>
+            </div>
+        </section>
+
         <section id="barbers" class="section section-skew">
             <div class="container">
                 <h2 class="section-title">Наши барберы</h2>
@@ -149,6 +170,7 @@
                 <h2 class="section-title">Онлайн-запись</h2>
 
                 <div class="booking-box">
+                    <!-- ВАЖНО: замени ТВОЙ_ID на свой реальный ID Formspree! -->
                     <form action="https://formspree.io/f/ТВОЙ_ID" method="POST" id="bookingForm">
                         <div class="form-row">
                             <div class="form-group">
