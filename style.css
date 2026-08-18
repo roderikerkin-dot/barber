@@ -112,7 +112,7 @@ a {
 .marquee-track {
     display: flex;
     width: max-content;
-    animation: marquee 18s linear infinite;
+    animation: marquee 30s linear infinite;
 }
 
 .marquee-track span {
